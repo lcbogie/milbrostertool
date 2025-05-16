@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bym2uxhvkadou"]
+
+[node name="Viewerv2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="viewpanel" type="PanelContainer" parent="."]
+layout_mode = 1
+offset_right = 800.0
+offset_bottom = 1200.0
+
+[node name="viewpanelmargins" type="MarginContainer" parent="viewpanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="viewpanelvertbox" type="VBoxContainer" parent="viewpanel/viewpanelmargins"]
+layout_mode = 2

@@ -26,7 +26,8 @@ window/size/viewport_width=1080
 window/size/viewport_height=1920
 window/size/initial_position_type=0
 window/stretch/mode="canvas_items"
-window/handheld/orientation=1
+window/stretch/aspect="expand"
+window/handheld/orientation=6
 
 [dotnet]
 
@@ -36,6 +37,11 @@ project/assembly_name="MiLBRosterTool"
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[gui]
+
+theme/custom="uid://cy2b1ci2yi0lv"
+theme/custom_font="uid://4s7o04qeq4xv"
 
 [rendering]
 
