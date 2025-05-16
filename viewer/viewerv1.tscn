@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckft4s5yc77km"]
+
+[ext_resource type="Script" uid="uid://80fjd7bs8up1" path="res://viewer/viewerv1.gd" id="1_7k7gr"]
+[ext_resource type="Script" uid="uid://cyx2tv0g21cll" path="res://viewer/line_one.gd" id="2_upk0e"]
+[ext_resource type="Script" uid="uid://b4s6ol34i5qqm" path="res://viewer/line_two.gd" id="3_upk0e"]
+
+[node name="Viewer" type="VBoxContainer"]
+offset_right = 450.0
+offset_bottom = 100.0
+script = ExtResource("1_7k7gr")
+
+[node name="LineOne" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(450, 0)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_upk0e")
+
+[node name="Name" type="RichTextLabel" parent="LineOne"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "Firstname Lastname"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Position" type="RichTextLabel" parent="LineOne"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+bbcode_enabled = true
+text = "INF"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+
+[node name="Jersey" type="RichTextLabel" parent="LineOne"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+bbcode_enabled = true
+text = "#J"
+autowrap_mode = 0
+horizontal_alignment = 1
+
+[node name="Age" type="RichTextLabel" parent="LineOne"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+bbcode_enabled = true
+text = "Age: AA"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+
+[node name="LineTwo" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(450, 0)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("3_upk0e")
+
+[node name="BatsThrows" type="RichTextLabel" parent="LineTwo"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "R/R"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+
+[node name="FortyMan" type="RichTextLabel" parent="LineTwo"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "40m: N"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+
+[node name="FV" type="RichTextLabel" parent="LineTwo"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "FV: Not Rated"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1

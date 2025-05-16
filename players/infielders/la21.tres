@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Player" load_steps=2 format=3 uid="uid://2txg6x2rscc2"]
+
+[ext_resource type="Script" uid="uid://dpdqkpcg0hapy" path="res://players/player_class.gd" id="1_xcc3j"]
+
+[resource]
+script = ExtResource("1_xcc3j")
+current_team = 0
+roster_position = 2
+last_name = "Ariza"
+first_name = "Luis"
+jersey = 21
+bats = 0
+throws = 0
+birth_year = 2004
+status = 0
+forty_man_status = false
+fangraphs_fv = 0
+position_projection = 11
+notes = ""
+metadata/_custom_type_script = "uid://dpdqkpcg0hapy"

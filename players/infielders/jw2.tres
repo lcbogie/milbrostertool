@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Player" load_steps=2 format=3 uid="uid://dn7i5p22h87k8"]
+
+[ext_resource type="Script" uid="uid://dpdqkpcg0hapy" path="res://players/player_class.gd" id="1_xx8hk"]
+
+[resource]
+script = ExtResource("1_xx8hk")
+current_team = 0
+roster_position = 2
+last_name = "Westbrook"
+first_name = "Jamie"
+jersey = 2
+bats = 0
+throws = 0
+birth_year = 1995
+status = 0
+forty_man_status = false
+fangraphs_fv = 0
+position_projection = 11
+notes = ""
+metadata/_custom_type_script = "uid://dpdqkpcg0hapy"

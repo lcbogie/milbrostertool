@@ -1,0 +1,166 @@
+[gd_scene load_steps=3 format=3 uid="uid://d8ig8ne1lir3"]
+
+[ext_resource type="Script" uid="uid://b8uxj61raruvh" path="res://lineup_scene/lineup_scene.gd" id="1_cxsce"]
+[ext_resource type="PackedScene" uid="uid://ckft4s5yc77km" path="res://viewer/viewerv1.tscn" id="1_mr1y7"]
+
+[node name="LineupScene" type="Node2D"]
+script = ExtResource("1_cxsce")
+
+[node name="Viewer1" parent="." instance=ExtResource("1_mr1y7")]
+offset_left = 87.0
+offset_top = 57.0
+offset_right = 537.0
+offset_bottom = 157.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Viewer2" parent="." instance=ExtResource("1_mr1y7")]
+offset_left = 96.0
+offset_top = 183.0
+offset_right = 546.0
+offset_bottom = 283.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Viewer3" parent="." instance=ExtResource("1_mr1y7")]
+offset_left = 104.0
+offset_top = 304.0
+offset_right = 554.0
+offset_bottom = 404.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Viewer4" parent="." instance=ExtResource("1_mr1y7")]
+offset_left = 87.0
+offset_top = 418.0
+offset_right = 537.0
+offset_bottom = 518.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Viewer5" parent="." instance=ExtResource("1_mr1y7")]
+offset_left = 87.0
+offset_top = 518.0
+offset_right = 537.0
+offset_bottom = 618.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Viewer6" parent="." instance=ExtResource("1_mr1y7")]
+offset_left = 87.0
+offset_top = 618.0
+offset_right = 537.0
+offset_bottom = 718.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Viewer7" parent="." instance=ExtResource("1_mr1y7")]
+offset_left = 87.0
+offset_top = 718.0
+offset_right = 537.0
+offset_bottom = 818.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Viewer8" parent="." instance=ExtResource("1_mr1y7")]
+offset_left = 87.0
+offset_top = 818.0
+offset_right = 537.0
+offset_bottom = 918.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Viewer9" parent="." instance=ExtResource("1_mr1y7")]
+offset_left = 87.0
+offset_top = 918.0
+offset_right = 537.0
+offset_bottom = 1018.0
+metadata/_edit_use_anchors_ = true
+
+[node name="PlayerBank" type="ItemList" parent="."]
+offset_left = 93.0
+offset_top = 1078.0
+offset_right = 976.0
+offset_bottom = 1617.0
+theme_override_font_sizes/font_size = 50
+
+[node name="Previewer" parent="." instance=ExtResource("1_mr1y7")]
+offset_left = 267.0
+offset_top = 1692.0
+offset_right = 717.0
+offset_bottom = 1792.0
+
+[node name="Bat1" type="Button" parent="."]
+offset_left = 608.0
+offset_top = 64.0
+offset_right = 718.0
+offset_bottom = 95.0
+text = "<- Batting 1st"
+metadata/_edit_use_anchors_ = true
+
+[node name="Bat2" type="Button" parent="."]
+offset_left = 615.0
+offset_top = 181.0
+offset_right = 731.0
+offset_bottom = 212.0
+text = "<- Batting 2nd"
+metadata/_edit_use_anchors_ = true
+
+[node name="Bat3" type="Button" parent="."]
+offset_left = 620.0
+offset_top = 302.0
+offset_right = 733.0
+offset_bottom = 333.0
+text = "<- Batting 3rd"
+metadata/_edit_use_anchors_ = true
+
+[node name="Bat4" type="Button" parent="."]
+offset_left = 603.0
+offset_top = 407.0
+offset_right = 716.0
+offset_bottom = 438.0
+text = "<- Batting 4th"
+metadata/_edit_use_anchors_ = true
+
+[node name="Bat5" type="Button" parent="."]
+offset_left = 603.0
+offset_top = 513.0
+offset_right = 716.0
+offset_bottom = 544.0
+text = "<- Batting 5th"
+metadata/_edit_use_anchors_ = true
+
+[node name="Bat6" type="Button" parent="."]
+offset_left = 603.0
+offset_top = 613.0
+offset_right = 716.0
+offset_bottom = 644.0
+text = "<- Batting 6th"
+metadata/_edit_use_anchors_ = true
+
+[node name="Bat7" type="Button" parent="."]
+offset_left = 601.0
+offset_top = 709.0
+offset_right = 714.0
+offset_bottom = 740.0
+text = "<- Batting 7th"
+metadata/_edit_use_anchors_ = true
+
+[node name="Bat8" type="Button" parent="."]
+offset_left = 598.0
+offset_top = 811.0
+offset_right = 711.0
+offset_bottom = 842.0
+text = "<- Batting 8th"
+metadata/_edit_use_anchors_ = true
+
+[node name="Bat9" type="Button" parent="."]
+offset_left = 602.0
+offset_top = 914.0
+offset_right = 715.0
+offset_bottom = 945.0
+text = "<- Batting 9th"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="item_selected" from="PlayerBank" to="." method="_on_player_bank_item_selected"]
+[connection signal="button_down" from="Bat1" to="." method="_on_bat_1_button_down"]
+[connection signal="button_down" from="Bat2" to="." method="_on_bat_2_button_down"]
+[connection signal="button_down" from="Bat3" to="." method="_on_bat_3_button_down"]
+[connection signal="button_down" from="Bat4" to="." method="_on_bat_4_button_down"]
+[connection signal="button_down" from="Bat5" to="." method="_on_bat_5_button_down"]
+[connection signal="button_down" from="Bat6" to="." method="_on_bat_6_button_down"]
+[connection signal="button_down" from="Bat7" to="." method="_on_bat_7_button_down"]
+[connection signal="button_down" from="Bat8" to="." method="_on_bat_8_button_down"]
+[connection signal="button_down" from="Bat9" to="." method="_on_bat_9_button_down"]

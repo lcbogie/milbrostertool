@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Player" load_steps=2 format=3 uid="uid://fgxdse7ft7kw"]
+
+[ext_resource type="Script" uid="uid://dpdqkpcg0hapy" path="res://players/player_class.gd" id="1_dwu5s"]
+
+[resource]
+script = ExtResource("1_dwu5s")
+current_team = 0
+roster_position = 1
+last_name = "Barrera"
+first_name = "Tres"
+jersey = 24
+bats = 0
+throws = 0
+birth_year = 1994
+status = 0
+forty_man_status = false
+fangraphs_fv = 0
+position_projection = 11
+notes = ""
+metadata/_custom_type_script = "uid://dpdqkpcg0hapy"
