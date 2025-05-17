@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://bym2uxhvkadou"]
+[gd_scene load_steps=2 format=3 uid="uid://bym2uxhvkadou"]
+
+[ext_resource type="Theme" uid="uid://cy2b1ci2yi0lv" path="res://assets/main_theme.tres" id="1_584iv"]
 
 [node name="Viewerv2" type="Control"]
 layout_mode = 3
@@ -23,4 +25,74 @@ theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
 [node name="viewpanelvertbox" type="VBoxContainer" parent="viewpanel/viewpanelmargins"]
+layout_mode = 2
+
+[node name="Row1" type="HBoxContainer" parent="viewpanel/viewpanelmargins/viewpanelvertbox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="namebox" type="VBoxContainer" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.5
+
+[node name="firstname" type="RichTextLabel" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row1/namebox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_584iv")
+bbcode_enabled = true
+text = "Firstname"
+fit_content = true
+
+[node name="lastname" type="RichTextLabel" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row1/namebox"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Lastname"
+
+[node name="jersey" type="RichTextLabel" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row1"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "#JJ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row2" type="HBoxContainer" parent="viewpanel/viewpanelmargins/viewpanelvertbox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="position" type="RichTextLabel" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row2"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "INF"
+horizontal_alignment = 1
+
+[node name="handed" type="RichTextLabel" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row2"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "R/R"
+horizontal_alignment = 1
+
+[node name="Row3" type="HBoxContainer" parent="viewpanel/viewpanelmargins/viewpanelvertbox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="40man" type="RichTextLabel" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row3"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "40m: Y"
+horizontal_alignment = 1
+
+[node name="age" type="RichTextLabel" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row3"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "AGE: xx"
+horizontal_alignment = 1
+
+[node name="Row4" type="HBoxContainer" parent="viewpanel/viewpanelmargins/viewpanelvertbox"]
 layout_mode = 2
