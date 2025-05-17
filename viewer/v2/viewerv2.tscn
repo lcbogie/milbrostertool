@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://bym2uxhvkadou"]
+[gd_scene load_steps=8 format=3 uid="uid://bym2uxhvkadou"]
 
 [ext_resource type="Theme" uid="uid://cy2b1ci2yi0lv" path="res://assets/main_theme.tres" id="1_584iv"]
 [ext_resource type="Script" uid="uid://ci0v852btu5kt" path="res://viewer/v2/vv2row_1.gd" id="1_y8txm"]
 [ext_resource type="Script" uid="uid://bdfh5r0xhes85" path="res://viewer/v2/vv2namebox.gd" id="2_bnarl"]
+[ext_resource type="Script" uid="uid://c8rq4e1dog2sb" path="res://viewer/v2/vv2row_2.gd" id="4_km1xk"]
+[ext_resource type="Script" uid="uid://dtbjy8h85yjj5" path="res://viewer/v2/vv2row_3.gd" id="5_j7vi0"]
+[ext_resource type="Script" uid="uid://cd10war5qboht" path="res://viewer/v2/vv2row_4.gd" id="6_6qfmv"]
+[ext_resource type="Script" uid="uid://r646bljavwb0" path="res://viewer/v2/vv2row_5.gd" id="7_j7vi0"]
 
 [node name="Viewerv2" type="Control"]
 layout_mode = 3
@@ -66,6 +70,7 @@ vertical_alignment = 1
 [node name="Row2" type="HBoxContainer" parent="viewpanel/viewpanelmargins/viewpanelvertbox"]
 layout_mode = 2
 size_flags_vertical = 3
+script = ExtResource("4_km1xk")
 
 [node name="position" type="RichTextLabel" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row2"]
 layout_mode = 2
@@ -84,6 +89,7 @@ horizontal_alignment = 1
 [node name="Row3" type="HBoxContainer" parent="viewpanel/viewpanelmargins/viewpanelvertbox"]
 layout_mode = 2
 size_flags_vertical = 3
+script = ExtResource("5_j7vi0")
 
 [node name="40man" type="RichTextLabel" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row3"]
 layout_mode = 2
@@ -102,6 +108,7 @@ horizontal_alignment = 1
 [node name="Row4" type="HBoxContainer" parent="viewpanel/viewpanelmargins/viewpanelvertbox"]
 layout_mode = 2
 size_flags_vertical = 3
+script = ExtResource("6_6qfmv")
 
 [node name="futurevalue" type="RichTextLabel" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row4"]
 layout_mode = 2
@@ -113,6 +120,7 @@ horizontal_alignment = 1
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
+script = ExtResource("7_j7vi0")
 
 [node name="notes" type="RichTextLabel" parent="viewpanel/viewpanelmargins/viewpanelvertbox/Row5"]
 layout_mode = 2
