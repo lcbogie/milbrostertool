@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bym2uxhvkadou"]
+[gd_scene load_steps=10 format=3 uid="uid://bym2uxhvkadou"]
 
+[ext_resource type="Script" uid="uid://sadvfgmvo8ar" path="res://viewer/v2/viewerv_2.gd" id="1_6qfmv"]
 [ext_resource type="Theme" uid="uid://cy2b1ci2yi0lv" path="res://assets/main_theme.tres" id="1_584iv"]
 [ext_resource type="Script" uid="uid://ci0v852btu5kt" path="res://viewer/v2/vv2row_1.gd" id="1_y8txm"]
 [ext_resource type="Script" uid="uid://bdfh5r0xhes85" path="res://viewer/v2/vv2namebox.gd" id="2_bnarl"]
+[ext_resource type="Script" uid="uid://bl83td3uxggx" path="res://viewer/v2/vv2viewpanelvertbox.gd" id="2_cxun8"]
 [ext_resource type="Script" uid="uid://c8rq4e1dog2sb" path="res://viewer/v2/vv2row_2.gd" id="4_km1xk"]
 [ext_resource type="Script" uid="uid://dtbjy8h85yjj5" path="res://viewer/v2/vv2row_3.gd" id="5_j7vi0"]
 [ext_resource type="Script" uid="uid://cd10war5qboht" path="res://viewer/v2/vv2row_4.gd" id="6_6qfmv"]
@@ -17,6 +19,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_6qfmv")
 
 [node name="viewpanel" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -32,6 +35,7 @@ theme_override_constants/margin_bottom = 50
 
 [node name="viewpanelvertbox" type="VBoxContainer" parent="viewpanel/viewpanelmargins"]
 layout_mode = 2
+script = ExtResource("2_cxun8")
 
 [node name="Row1" type="HBoxContainer" parent="viewpanel/viewpanelmargins/viewpanelvertbox"]
 layout_mode = 2
