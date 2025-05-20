@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="MiLBRosterTool"
-run/main_scene="uid://cktddhwhowxhr"
+run/main_scene="uid://b2lbvq3wdd1d8"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

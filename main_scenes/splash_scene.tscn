@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2lbvq3wdd1d8"]
+
+[ext_resource type="Script" uid="uid://dy76wbmleas2o" path="res://main_scenes/splash_scene.gd" id="1_n856l"]
+
+[node name="SplashScene" type="Node2D"]
+script = ExtResource("1_n856l")
+
+[node name="AssignmentButton" type="Button" parent="."]
+offset_left = 254.0
+offset_top = 488.0
+offset_right = 858.0
+offset_bottom = 560.0
+text = "Lineup Assignment"
+
+[connection signal="button_down" from="AssignmentButton" to="." method="_on_assignment_button_button_down"]
